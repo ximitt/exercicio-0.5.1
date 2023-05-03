@@ -1,0 +1,81 @@
+h1{
+    text-align: center;
+    padding-left:  45px;
+    margin: 40px;
+    font-family: ubuntu;
+}
+
+a{
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    font-family: ubuntu;
+}
+.Pendentes{
+    background-color: #8FD14F;
+    color: white;
+    margin: 6px;
+    font-family: ubuntu;
+}
+    
+.Concluídas{
+    background-color: #0CA789;
+    color: white;
+    margin: 6px;
+    font-family: ubuntu;
+}
+
+.Excluídas{
+    background-color: #EB4045;
+    color: white;
+    margin: 6px;
+    font-family: ubuntu;
+}
+
+ul {
+    text-align: center;
+    font-family: ubuntu;
+}
+
+div{
+    width: 500px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 3px black;
+    font-family: ubuntu;
+}
+div:nth-child(even){
+    background-color: white;
+    font-family: ubuntu;
+}
+
+div:hover{
+    transform: scale(1.1);
+    font-family: ubuntu;
+}
+
+ .alerta{
+    padding: 9px;
+    border-radius: 5px;
+    color: white;
+    margin: 6px;
+    font-family: ubuntu;
+ }
+
+ .index1{
+    background-color: #8FD14F;
+    font-family: ubuntu;
+ }
+
+ .concluidas1{
+    background-color: #0CA789;
+    font-family: ubuntu;
+ }
+
+ .excluidas1{
+    background-color: #EB4045;
+    font-family: ubuntu;
+ }
