@@ -1,8 +1,12 @@
 h1{
-    text-align: center;
-    padding-left:  45px;
-    margin: 40px;
-    font-family: ubuntu;
+padding-left: 27em;
+font-family: ubuntu;  
+}
+:root{
+    --cor-pendentes:#8FD14F;
+    --cor-concluidas:#0CA789;
+    --cor-excluidas:#EB4045;
+    --cor-texto: white;
 }
 
 a{
@@ -10,27 +14,27 @@ a{
     text-decoration: none;
     padding: 10px;
     margin: 10px;
-    font-family: ubuntu;
 }
 .Pendentes{
-    background-color: #8FD14F;
-    color: white;
-    margin: 6px;
-    font-family: ubuntu;
+    background-color: var(--cor-pendentes);
+    border-radius: 20px;
+    border: 2px;
+    color: var(--cor-texto);
+    margin: 5px;
 }
     
 .Concluídas{
-    background-color: #0CA789;
-    color: white;
-    margin: 6px;
-    font-family: ubuntu;
+    background-color: var(--cor-concluidas);
+    border-radius: 20px;
+    color: var(--cor-texto);
+    margin: 5px;
 }
 
 .Excluídas{
-    background-color: #EB4045;
-    color: white;
-    margin: 6px;
-    font-family: ubuntu;
+    background-color: var(--cor-excluidas);
+    border-radius: 20px;
+    color: var(--cor-texto);
+    margin: 5px;
 }
 
 ul {
@@ -39,43 +43,93 @@ ul {
 }
 
 div{
-    width: 500px;
-    border-radius: 20px;
-    text-decoration: none;
-    margin: 0 auto;
-    background-color: #fff;
-    border: 3px black;
-    font-family: ubuntu;
-}
-div:nth-child(even){
-    background-color: white;
-    font-family: ubuntu;
+    padding: 2px;
+    margin: 50px;
+
 }
 
 div:hover{
     transform: scale(1.1);
-    font-family: ubuntu;
 }
 
- .alerta{
-    padding: 9px;
-    border-radius: 5px;
+.tarefa{
+    width: 30em;
+    border-radius: 15px;
+    border: 2px #8FD14F solid;
+    margin: 15px;
+    margin-left: 43.3em;
+    text-align: center;
+    text-decoration: none;
+    font-family: ubuntu;
     color: white;
-    margin: 6px;
-    font-family: ubuntu;
- }
+    background-color: var(--cor-pendentes);
+    transition: 0.2s ease-in-out;
+}
 
- .index1{
-    background-color: #8FD14F;
-    font-family: ubuntu;
- }
+.tarefa:nth-child(even){
+    background-color: white;
+    color: gray;
+}
 
- .concluidas1{
-    background-color: #0CA789;
+.concluida{
+    width: 30em;
+    border-radius: 15px;
+    border: 2px #0CA789 solid;;
+    margin: 15px;
+    margin-left: 43.3em;
+    text-align: center;
+    text-decoration: none;
     font-family: ubuntu;
- }
+    color: white;
+    background-color: var(--cor-concluidas);
+    transition: 0.2s ease-in-out;
+}
 
- .excluidas1{
-    background-color: #EB4045;
+.concluida:nth-child(even){
+    background-color: white;
+    border: 2px color white;
+    color: gray;
+}
+
+.excluida{
+    width: 30em;
+    border-radius: 15px;
+    border: 2px #EB4045 solid;
+    margin: 15px;
+    margin-left: 43.3em;
+    text-align: center;
+    text-decoration: none;
     font-family: ubuntu;
- }
+    color: white;
+    background-color: var(--cor-excluidas);
+    transition: 0.2s ease-in-out;
+}
+
+.excluida:nth-child(even){
+    background-color: white;
+    border: 2px color white;
+    color: gray;
+}
+
+
+.tarefa, .excluida, .concluida {
+
+    animation: transicao 0.75s;
+
+
+}
+
+@keyframes transicao {
+    from {
+            opacity: 0;
+            transform: rotateY(-10px);
+
+
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateY(0);
+
+    }
+}
